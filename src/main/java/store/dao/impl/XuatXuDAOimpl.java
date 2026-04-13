@@ -27,6 +27,8 @@ public class XuatXuDAOimpl {
                   DELETE FROM [dbo].[XuatXu]
                         WHERE id = ?
                   """;
+
+    //hehe sdjfhjdhjgit
     public int delete(int id){
         return XJdbc.executeUpdate(delete, id);
     }
