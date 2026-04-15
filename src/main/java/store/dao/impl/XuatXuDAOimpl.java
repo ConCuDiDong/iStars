@@ -14,9 +14,11 @@ import store.util.XQuery;
  * @author LEGION
  */
 public class XuatXuDAOimpl {
+
+
     String getAll = "select * from XuatXu";
-        String getOne = "select * from XuatXu where id = ?";
-   
+    String getOne = "select * from XuatXu where id = ?";
+
     String create = """
                     INSERT INTO [dbo].[XuatXu]
                                ([noiSanXuat])
@@ -26,7 +28,7 @@ public class XuatXuDAOimpl {
     String delete =  """
                   DELETE FROM [dbo].[XuatXu]
                         WHERE id = ?
-                  """;
+                  """;//getOneByid
 
     //hehe sdjfhjdhjgit
     public int delete(int id){
