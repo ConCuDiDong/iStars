@@ -12,21 +12,22 @@ public class TimeRange {
     private Date begin = new Date();
     private Date end = new Date();
     
+    //check
     private TimeRange(LocalDate begin, LocalDate end) {
         this(java.sql.Date.valueOf(begin), java.sql.Date.valueOf(end));
     }
-    
+
     public static TimeRange today() {
         LocalDate begin = LocalDate.now();
         return new TimeRange(begin, begin.plusDays(1));
     }
-    
+
     public static TimeRange thisWeek() {
         LocalDate now = LocalDate.now();
         LocalDate begin = now.minusDays(now.getDayOfWeek().getValue() - 1);
         return new TimeRange(begin, begin.plusDays(7));
     }
-    
+
     public static TimeRange thisMonth() {
         LocalDate now = LocalDate.now();
         LocalDate begin = now.withDayOfMonth(1);
