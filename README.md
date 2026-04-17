@@ -123,3 +123,5 @@
   ```
 
   **Có thể chuyển qua chuyển lại giữa các branch mà bạn đã tạo trên GitHub, nó sẽ được đồng bộ với máy tính của bạn khi dùng lệnh** `git pull` 👌
+
+THE END.
